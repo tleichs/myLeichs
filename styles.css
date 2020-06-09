@@ -1,11 +1,12 @@
 body {
     font-family: "Montserrat";
+    max-width: inherit;
 }
 
 #title {
     background-color: rgb(2, 59, 9);
     color: #fff;
-    padding-bottom: 20rem;
+    padding-bottom: 15rem;
 }
 
 h1,
@@ -20,10 +21,6 @@ h3 {
     font-size: 1.5rem;
 }
 
-p {
-    color: dimgray;
-}
-
 
 /* navigation bar */
 
@@ -36,10 +33,11 @@ p {
     font-family: "Ubuntu";
     font-size: 2.5rem;
     font-weight: bold;
+    color: #84ff00;
 }
 
 .nav-item {
-    padding: 0 10px;
+    padding: 0 5px;
 }
 
 .btn {
@@ -49,6 +47,7 @@ p {
 .nav-link {
     font-size: 1, 3rem;
     font-family: "Montserrat-light";
+    color: #84ff00;
 }
 
 .subtitle {
@@ -56,15 +55,17 @@ p {
     padding-top: 10rem;
 }
 
-.title-img {
+
+/* .title-img {
     width: 50%;
     transform: rotate(0);
     margin-left: 20%;
-}
+} */
 
 #features {
     padding: 7% 15%;
     position: relative;
+    text-align: center;
 }
 
 .featureBox {
@@ -102,19 +103,8 @@ p {
     color: white;
 }
 
-.ImageTestimonials {
-    width: 10%;
-    border-radius: 90%;
-    margin-right: 1%;
-}
-
 .carousel-item {
     padding: 7% 15%;
-}
-
-.img {
-    width: 50%;
-    height: 50%;
 }
 
 #pricing {
@@ -124,7 +114,7 @@ p {
 
 .card {
     width: 90%;
-    height: 105%;
+    height: 100%;
 }
 
 #cta {
@@ -138,6 +128,18 @@ p {
 
 #footer {
     text-align: right;
+}
+
+.Facebook {
+    color: blue
+}
+
+.Linkedin {
+    color: rgb(34, 97, 139);
+}
+
+.Email {
+    color: rgb(3, 90, 10);
 }
 
 @media (max-width: 1028px) {
