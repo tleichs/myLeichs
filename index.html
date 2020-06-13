@@ -20,7 +20,7 @@
 <body>
     <section id="title">
         <div class="container-fluid">
-            <nav class="navbar bg-transparent navbar-expand-lg">
+            <nav class="navbar  navbar-expand-lg fixed-top">
                 <a class="navbar-brand" href="">Always Learning</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -88,7 +88,20 @@
 
 
             <div class="featureBox col-lg-12">
-                <a class="icon Amazon fab fa-amazon fa-4x " href="https://www.amazon.de/dp/B088HJ62MT" target="_blank" rel="noopener noreferrer"></a>
+                <p>
+                    <a class="icon Amazon fab fa-amazon fa-4x" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    </a>
+                </p>
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                        <a class="icon Amazon fab fa-amazon fa-2x " href="https://www.amazon.de/dp/B088HJ62MT" target="_blank" rel="noopener noreferrer">Deutschland</a>
+                        <a class="icon Amazon fab fa-amazon fa-2x " href="https://www.amazon.com/dp/B088HJ62MT" target="_blank" rel="noopener noreferrer">USA</a>
+                        <a class="icon Amazon fab fa-amazon fa-2x " href="https://www.amazon.com.br/dp/B088HJ62MT" target="_blank" rel="noopener noreferrer">Brasil</a>
+                        <a class="icon Amazon fab fa-amazon fa-2x " href="https://www.amazon.co.uk/dp/B088HJ62MT" target="_blank" rel="noopener noreferrer">UK</a>
+                        <a class="icon Amazon fab fa-amazon fa-2x " href="https://www.amazon.com.au/dp/B088HJ62MT" target="_blank" rel="noopener noreferrer">Australia</a>
+
+                    </div>
+                </div>
                 <h3>"The Prayer of Jesus"</h3>
                 <p>and its explanation</p>
 
@@ -169,14 +182,14 @@
         <div class="row">
             <div class="featureBox col-lg-6">
 
-                <button type="button" class="btn btn-dark btn-lg" onclick="location.href='https://play.google.com/store/apps/details?id=com.tiagoleichs.alwayslearninggerman'" type="button" target="_blank" rel="noopener noreferrer"><i class="fab fa-google-play" ></i> Download</button>
+                <button type="button" class="btn btn-dark btn-lg" onclick="window.open('https://play.google.com/store/apps/details?id=com.tiagoleichs.alwayslearninggerman')" type="button" target="_blank" rel="noopener noreferrer"><i class="fab fa-google-play" ></i> Download</button>
                 <h3>Help Germany</h3>
                 <p>An app to help you with bureaucracies in Germany</p>
             </div>
             <div class="featureBox col-lg-6">
 
-                <button type="button" class="btn btn-light btn-lg" onclick="location.href='https://play.google.com/store/apps/details?id=com.tiagoleichs.helpgermany'" type="button"><a class="fab fa-google-play" target="_blank" rel="noopener noreferrer"></a> Download</button>
-                <h3>Alway Learning. Germany</h3>
+                <button type="button" class="btn btn-light btn-lg" onclick="window.open('https://play.google.com/store/apps/details?id=com.tiagoleichs.helpgermany')" type="button"><a class="fab fa-google-play" target="_blank" rel="noopener noreferrer"></a> Download</button>
+                <h3>Always Learning. German</h3>
                 <p>An app to learn basic German</p>
             </div>
 
