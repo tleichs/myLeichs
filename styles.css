@@ -162,10 +162,8 @@ h3 {
     #title {
         text-align: center;
     }
-    .title-img {
-        transform: rotate(0);
-        position: static;
-        margin-left: 0;
+    .btnGame {
+        visibility: collapse;
     }
 }
 
@@ -181,7 +179,7 @@ h3 {
 
 #bodyGame {
     text-align: center;
-    background-color: #011F3F;
+    background-color: rgb(2, 49, 8);
 }
 
 h4 {
@@ -217,26 +215,38 @@ h4 {
 
 .red {
     background: url("images/car.jpg");
+    background-position: center;
+    background-size: cover;
 }
 
 .green {
     background: url("images/bus.jpg");
+    background-position: inherit;
+    background-size: cover;
 }
 
 .blue {
     background: url("images/zug.png");
+    background-position: center;
+    background-size: cover;
 }
 
 .yellow {
     background: url("images/bahn.png");
+    background-position: center;
+    background-size: cover;
 }
 
 .black {
     background: url("images/fahrrad.png");
+    background-position: center;
+    background-size: cover;
 }
 
 .white {
     background: url("images/flugzeug.png");
+    background-position: center;
+    background-size: cover;
 }
 
 .pressed {
