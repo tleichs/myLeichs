@@ -12,7 +12,8 @@ body {
 }
 
 #titleblog {
-    background-color: rgb(2, 49, 8);
+    background-color: rgb(1, 71, 10);
+    ;
     color: #fff;
     padding-bottom: 1rem;
 }
@@ -29,12 +30,18 @@ h3 {
     font-size: 1.5rem;
 }
 
+h4 {
+    font-family: "Montserrat-Black";
+    font-size: 2rem;
+}
+
 
 /* navigation bar */
 
 .navbar {
     padding: 0 0 0.5rem;
-    background-color: rgb(2, 49, 8);
+    background-color: rgb(1, 71, 10);
+    ;
 }
 
 .navbar-brand {
@@ -112,7 +119,7 @@ h3 {
 
 #testimonials {
     text-align: center;
-    background-color: rgb(2, 49, 8);
+    background-color: rgb(1, 71, 10);
     color: white;
 }
 
@@ -132,7 +139,7 @@ h3 {
 
 #cta {
     text-align: center;
-    background-color: rgb(2, 49, 8);
+    background-color: rgb(1, 71, 10);
     color: white;
     padding-top: 5rem;
     font-family: "Montserrat-Black", "Helvetica Neue", Helvetica, sans-serif;
@@ -168,7 +175,8 @@ h3 {
 }
 
 .blog {
-    background-color: rgb(2, 49, 8);
+    background-color: rgb(1, 71, 10);
+    ;
     color: mintcream;
     height: 300%;
     ;
@@ -179,7 +187,8 @@ h3 {
 
 #bodyGame {
     text-align: center;
-    background-color: rgb(2, 49, 8);
+    background-color: rgb(1, 71, 10);
+    ;
 }
 
 h4 {
