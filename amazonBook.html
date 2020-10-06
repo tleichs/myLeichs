@@ -3,16 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <script>
-        window.dataLayer = window.dataLayer || [];
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-171264740-1');
-    </script>
     <!-- Global site tag (gtag.js) - Google Ads: 820790444 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-820790444"></script>
     <script>
@@ -25,12 +16,27 @@
 
         gtag('config', 'AW-820790444');
     </script>
-    <!-- Event snippet for Website traffic conversion page -->
+
+    <!-- Google Tag Manager -->
     <script>
-        gtag('event', 'conversion', {
-            'send_to': 'AW-820790444/f2v9CJH9kdcBEKyJsYcD'
-        });
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MZK2TRR');
     </script>
+    <!-- End Google Tag Manager -->
+
+
 
     <title>Always Learning</title>
     <link rel="icon" href="titelimg.png">
@@ -44,8 +50,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/cbf5b3089b.js" crossorigin="anonymous"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171264740-1"></script>
+
 
 
 </head>
@@ -190,8 +195,10 @@
         <h2>The book in pdf</h2>
         <h3>Our Father in Heaven</h3>
         <p>And its explanation</p>
-
-        <button type="button" onclick="window.open('pdfdatei/ourFather.pdf')" type="button" target="_blank" rel="noopener noreferrer"><i class="fas fa-download"></i>   Open datei</button>
+        <!-- Event snippet for Website traffic conversion page -->
+        <button type="button" onclick=" gtag('event', 'conversion', {
+            'send_to': 'AW-820790444/f2v9CJH9kdcBEKyJsYcD'
+        }); window.open('pdfdatei/ourFather.pdf')" type="button" target="_blank" rel="noopener noreferrer"><i class="fas fa-download"></i>   Open datei</button>
 
 
     </section>
