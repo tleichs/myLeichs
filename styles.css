@@ -18,10 +18,15 @@ body {
     padding-bottom: 1rem;
 }
 
-h1,
-h2 {
+h1 {
     font-family: "Montserrat-Black";
     font-size: 3rem;
+    line-height: 1.5;
+}
+
+h2 {
+    font-family: "Montserrat-Black";
+    font-size: 2rem;
     line-height: 1.5;
 }
 
@@ -69,6 +74,7 @@ h4 {
 .subtitle {
     text-align: center;
     padding-top: 10rem;
+    font-size: 5rem;
 }
 
 
@@ -141,7 +147,8 @@ h4 {
     text-align: center;
     background-color: rgb(1, 71, 10);
     color: white;
-    padding-top: 5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     font-family: "Montserrat-Black", "Helvetica Neue", Helvetica, sans-serif;
     font-size: 120%;
 }
