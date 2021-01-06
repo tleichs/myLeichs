@@ -1,23 +1,40 @@
+console.log($("#count a").length);
+$("#count a").each(function(index, value) {
+
+    console.log(index + " " + value)
+
+})
+
+
+
+
+$(".dois").on("click", function() {
+    $(".set2").slideToggle()
+})
+
 var buttonWords = ["Das Auto", "Der Zug", "Der Bus", "Die Bahn", "Das Fahrrad", "Das Flugzeug"]
 var buttonColours = ["red", "blue", "green", "yellow", "black", "white"];
 var gamePattern = []
 var userClickedPattern = []
 
 var level = 0
+var started = false;
+
 
 $(".btn2").on("click", function() {
 
-    $("#level-title").text("Level " + level)
-    nextSequence()
+    if (!started) {
+        $("#level-title").text("Level " + level);
+        nextSequence();
+        started = true;
 
+    }
 })
 
-$(document).on('keypress', function(e) {
+$(document).on('keydown', function(e) {
     if (e.which == 13) {
 
         var userChosenColour = $(this).attr("id");
-
-
         var inputWord = $('.um').val();
 
 
@@ -78,7 +95,6 @@ function checkAnswer(currentLevel) {
 function nextSequence() {
 
     userClickedPattern = [];
-
     level++;
 
 
@@ -95,9 +111,6 @@ function nextSequence() {
 
     gamePattern.push(randomChosenWord);
 
-
-    //1. Use jQuery to select the button with the same id as the randomChosenColour
-    //2. Use Google/Stackoverflow to figure out how you can use jQuery to animate a flash to the button selected in step 1.
     $("#" + randomChosenColour).fadeIn(100).fadeOut(100).fadeIn(100);
 
     playSound(randomChosenWord);
